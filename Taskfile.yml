@@ -1,0 +1,22 @@
+version: '2'
+
+silent: true
+
+tasks:
+  default:
+    summary: Build and release the docker image
+    cmds:
+      - task: build
+      - task: release
+
+  build:
+    summary: Build the docker image
+    cmds:
+      - ./image_creator.sh build
+
+  release:
+    summary: Push the built image to Dockerhub
+    deps:
+      - task: build
+    cmds:
+      - ./image_creator.sh release
