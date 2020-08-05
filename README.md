@@ -1,5 +1,7 @@
 # Bitbake Docker
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/elcfd/openwrt-builder)](https://hub.docker.com/r/elcfd/openwrt-builder)
+
 This project creates a docker image which can be used as a containerized build environment for the [Openwrt project](https://openwrt.org/).
 
 ## Features
