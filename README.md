@@ -18,7 +18,7 @@ docker image pull elcfd/openwrt-builder:latest
 To run the container:
 
 ```
-docker container run -it --rm -v /workdir:/workdir elcfd/openwrt-build:latest
+docker container run -it --rm -v /workdir:/workdir elcfd/openwrt-builder:latest
 ```
 
 Where **/workdir** is the location on the host PC that is going to be mounted into the build container.
