@@ -1,0 +1,4 @@
+.git*
+*.md
+LICENSE
+image_creator.sh
