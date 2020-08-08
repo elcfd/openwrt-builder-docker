@@ -1,4 +1,4 @@
-# Bitbake Docker
+# Openwrt Builder Docker
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/elcfd/openwrt-builder)](https://hub.docker.com/r/elcfd/openwrt-builder)
 
