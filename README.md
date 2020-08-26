@@ -77,7 +77,7 @@ builder@b4e96c8d231c:/workdir/openwrt$ make menuconfig
 builder@b4e96c8d231c:/workdir/openwrt$ make -j$(nproc)
 ```
 
-The resulting images will be under `bin/target/**/**/` folder.
+The resulting images will be under `bin/targets/**/**/` folder.
 
 ## Development
 
