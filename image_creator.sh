@@ -3,8 +3,7 @@
 DOCKERHUB_USERNAME="elcfd"
 REPOSITORY="openwrt-builder"
 
-usage()
-{
+function usage {
     echo "Incorrect args - must specify build or release"
     echo -e "\n   ./image_creator.sh <action>"
     exit 1
@@ -14,15 +13,13 @@ usage()
 
 # args: 
     # image tag
-build()
-{
+function build {
     docker build -t "$1:latest" .
 }
 
 # args: 
     # image tag
-release()
-{
+function release {
     docker image push "$1:latest"
     datestamp_tag="$1:$(date +"%Y_%m_%d-%H_%M_%S")"
     docker tag "$1:latest" "$datestamp_tag"
