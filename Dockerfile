@@ -1,4 +1,4 @@
-FROM        ubuntu:18.04
+FROM        ubuntu:20.04
 
 LABEL       maintainer  "elcfd <elcfd@whitetree.xyz>"
 
@@ -22,6 +22,8 @@ RUN         apt update && \
                 wget \
                 locales \
                 ncurses-dev \
+                python3 \
+                rsync \
                 tree \
                 sudo \
                 tmux \
